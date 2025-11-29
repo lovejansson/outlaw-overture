@@ -1,0 +1,51 @@
+{ "frames": {
+   "outlaw-overture 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 224, "h": 126 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 224, "h": 126 },
+    "sourceSize": { "w": 224, "h": 126 },
+    "duration": 150
+   },
+   "outlaw-overture 1.aseprite": {
+    "frame": { "x": 224, "y": 0, "w": 224, "h": 126 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 224, "h": 126 },
+    "sourceSize": { "w": 224, "h": 126 },
+    "duration": 150
+   },
+   "outlaw-overture 2.aseprite": {
+    "frame": { "x": 448, "y": 0, "w": 224, "h": 126 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 224, "h": 126 },
+    "sourceSize": { "w": 224, "h": 126 },
+    "duration": 150
+   },
+   "outlaw-overture 3.aseprite": {
+    "frame": { "x": 672, "y": 0, "w": 224, "h": 126 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 224, "h": 126 },
+    "sourceSize": { "w": 224, "h": 126 },
+    "duration": 150
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.14.3-x64",
+  "image": "arrow.png",
+  "format": "RGBA8888",
+  "size": { "w": 896, "h": 126 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Loop", "from": 0, "to": 3, "direction": "forward", "color": "#000000ff" }
+  ],
+  "layers": [
+   { "name": "arrow", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
