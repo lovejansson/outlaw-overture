@@ -27,6 +27,10 @@ function main() {
 
     art.start();
 
+    audioPlayer.addEventListener("fullscreen", () => {
+            art.enterFullScreen();
+    });
+
     audioPlayer.addEventListener("play", async () => {
           await art.play();
     });
