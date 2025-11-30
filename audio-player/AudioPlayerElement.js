@@ -120,6 +120,7 @@ export default class AudioPlayerElement extends HTMLElement {
 
     attributeChangedCallback(name, oldValue, newValue) {
        if(DEBUG) console.log(`Attribute ${name} has changed from ${oldValue} to ${newValue}`);
+       this[name] = newValue;
     }
 
     isActive(){

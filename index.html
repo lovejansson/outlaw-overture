@@ -67,20 +67,28 @@
           
             }
 
-            #controls {
-                width: 100%;
+            #bar {
                 display: flex;
-                display: flex;
+                flex-direction: row;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: space-between;
+                width: 100%;
                 opacity: 0;
                 transition: opacity 0.2s ease-in;
                 padding: 1rem;
                 background-color: #121212c9;
+                color: var(--color);
             }
 
-            #player:hover > #controls,  
-            #player.active > #controls {
+            #controls {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                     color: var(--color);
+            }
+
+            #player:hover > #bar,  
+            #player.active > #bar {
                 opacity: 1;
             }
 
@@ -121,6 +129,8 @@
         </style>
 
         <div tabindex="0"  id="player" class="player-part">
+            <section id="bar">
+            <p>MGK - Outlaw overture</p>
             <section class="player-part" id="controls">
                 <button class="player-part" id="btn-play-pause"><svg class="icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z" fill="currentColor"/> </svg></button>
                 <div class="player-part" id="volume-control">
@@ -130,6 +140,7 @@
                     <button class="player-part"></button>
                     <button class="player-part"></button>
                 </div>
+            </section>
             </section>
         </div>
     </template>

@@ -1,7 +1,6 @@
 
-import { Scene } from "./lib/index.js";
+import { Scene, AnimatedImage } from "./lib/index.js";
 import { BASE_URL } from "./config.js";
-import AnimatedImage from "./AnimatedSprite.js";
 
 export default class Pause extends Scene {
 
@@ -14,8 +13,8 @@ export default class Pause extends Scene {
         this.art.images.add("arrow", `${BASE_URL}assets/images/arrow.png`);
         await this.art.images.load();
 
-        const response2 = await fetch('./arrow.json');
-        const config = await response2.json();
+        const res = await fetch(`${BASE_URL}assets/anim/arrow.json`);
+        const config = await res.json();
 
         this.arrow = new AnimatedImage(this, Symbol("arrow"), "arrow", config);
     }
